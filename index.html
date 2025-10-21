@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuenta Regresiva para Mi Meta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="background-image-container"></div>
+    <div class="overlay"></div>
+
+    <div class="main-content">
+        <div class="countdown-container">
+            <h1>¡Mi meta está cada vez más cerca! ✨</h1>
+            
+            <div id="mensaje-animo" class="mensaje-animo">
+                <p>¡Tú puedes con todo!</p>
+            </div>
+            
+            <div id="countdown" class="countdown">
+                <div class="time-box">
+                    <span id="dias" class="time-value">0</span>
+                    <small>Días</small>
+                </div>
+                <div class="time-box">
+                    <span id="horas" class="time-value">0</span>
+                    <small>Horas</small>
+                </div>
+                <div class="time-box">
+                    <span id="minutos" class="time-value">0</span>
+                    <small>Minutos</small>
+                </div>
+                <div class="time-box">
+                    <span id="segundos" class="time-value">0</span>
+                    <small>Segundos</small>
+                </div>
+            </div>
+
+            <div id="mensaje-final" class="mensaje-final" style="display:none;">
+                <h2>¡Lo lograste! ¡Felicidades, campeona! 🏆🎉</h2>
+            </div>
+        </div>
+
+        <!-- ===== Animación de Progreso: Montaña ===== -->
+        <div class="progress-mountain-container">
+            <div class="mountain">
+                <div id="climber" class="climber">🏃‍♀️‍➡️</div>
+                <div class="flag">🚩</div>
+            </div>
+            <div class="progress-text">
+                Progreso: <span id="progress-percentage">0%</span>
+            </div>
+        </div>
+        <!-- ========================================= -->
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
